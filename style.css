@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#form{
+    position:relative;
+}
+
+#form #email{
+    width: 300px;
+    background-color: #292929;
+    color: white;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+#form #inputBox{
+    position: relative;
+}
+#text{
+    display: block;
+    color: #292929;
+    font-weight: 500i;
+    font-style: italic;
+    padding: 5px;
+}
+#form #inputBox::before{
+   content : '';
+   position: absolute;
+   right: 12px;
+   top: 12px;
+   width: 24px;
+   height: 24px;
+   background: url();
+}
