@@ -23,7 +23,7 @@ body{
     border: none;
     border-radius: 6px;
 }
-#form #inputBox{
+#form .inputBox{
     position: relative;
 }
 #text{
@@ -33,12 +33,25 @@ body{
     font-style: italic;
     padding: 5px;
 }
-#form #inputBox::before{
+#form.invalid .inputBox::before{
    content : '';
    position: absolute;
    right: 12px;
-   top: 12px;
+   top: 8px;
    width: 24px;
    height: 24px;
-   background: url();
+   background: url(invalid.png);
+   background-size: cover;
+   z-index: 1000;
 }
+#form.valid .inputBox::before{
+    content : '';
+    position: absolute;
+    right: 12px;
+    top: 8px;
+    width: 24px;
+    height: 24px;
+    background: url(valid.png);
+    background-size: cover;
+    z-index: 1000;
+ }
